@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Форма</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		legend {
+			color: red;	
+		}
+		form {
+			color: black;
+		}
+		fieldset {
+		background-color: pink;	
+		width: 500px;
+		}
+		p {
+			font-size: 18px;
+		}
+	</style>
+</head>
+<body>
+<fieldset>
+ <legend>Анкета</legend>
+<form action="/login" method="POST">
+	<p>
+		<label>Email</label>
+			<label>
+				<input type="email" placeholder="Введите свой Email">
+			</label>
+	</p>
+	<p>
+	<label>Имя</label>
+		<label>
+			<input type="text" placeholder="Введите своё имя">	
+		</label>
+	</p>
+	<p>
+	<label>Пароль</label>
+		<label>
+			<input type="password" placeholder="Введите пароль">
+		</label>
+	</p>
+	<p>
+	<label>Телефон</label>
+		<label>
+			<input type="tel" placeholder="Введите свой телефон">
+		</label>
+	</p>
+	<label>Комментарий</label>
+	<textarea></textarea>
+	<p>
+		<label>
+	  		<input type="checkbox"> Я согласен с <a href="https://www.google.com.ua/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwigj7OBievNAhWE1iwKHR7vAwkQFggfMAA&url=http%3A%2F%2Fhtmlbook.ru%2Fblog%2Framki-i-granicy&usg=AFQjCNFSxKjGOYNYkxDmeFC71WOl8WiOEw&sig2=DEVxo5F5omZFZYo85hgSjQ" target="blank">условиями</a> 
+		</label>
+	</p>
+	<p>
+		<label>
+	  		<input type="checkbox" checked> Использовать мой платёжный адрес
+		</label>
+	</p>
+	<p>
+		<label>Семейное положение</label>
+			<label>
+			  <input type="radio" name="status">
+			  Холост
+			</label>
+			<label>
+			  <input type="radio" name="status">
+			  Женат
+			</label>
+			<label>
+			  <input type="radio" name="status">
+			  Разведён
+			</label>
+			<label>
+			  <input type="radio" name="status">
+			  Вдовец
+			</label>
+	</p>
+	<select>
+	  <option>Январь</option>
+	  <option>Февраль</option>
+	  <option>Март</option>
+	  <option>Апрель</option>
+	  <option>Май</option>
+	  <option>Июнь</option>
+	  <option>Июль</option>
+	  <option>Август</option>
+	  <option>Сентябрь</option>
+	  <option>Октябрь</option>
+	  <option>Ноябрь</option>
+	  <option>Декабрь</option>
+	</select>
+	<p>
+		<label>Какими браузерами вы пользуетесь?</label>
+	</p>
+<select multiple>
+  <option>Google Chrome</option>
+  <option>Internet Explorer</option>
+  <option>Mozilla Firefox</option>
+  <option>Opera</option>
+  <option>Safari</option>
+</select>
+  <p>
+    <button>
+      Зарегистрироваться
+    </button>
+  </p>
+  </form>
+  </fieldset>
+
+<h2>Form 2</h2>
+<fieldset>
+	<legend>Attempt №2</legend>
+	<form action="/login" method="POST">
+	<p>
+		<label>Which vacancy are you interested in?</label>
+	</p>
+	<p>
+		<label>
+			<select>
+		<option>Sales manager</option>
+		<option>Project manager</option>
+		<option>Developer</option>	
+			</select>
+		</label>
+	</p>
+	<hr>
+	<p>
+		<label>Your education</label>
+	</p>
+	<p>
+		<label>
+			<input type="radio" name="status">
+			School
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="radio" name="status">
+			University
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="radio" name="status">
+			PHD
+		</label>
+	</p>
+	<hr>
+	<p>
+		<label>Your experience</label>
+	</p>
+	<p>
+		<label>
+			<input type="radio" name="status">
+			more 3 years
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="radio" name="status">
+			from 1 year to 3 years
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="radio" name="status">
+			less 1 year
+		</label>
+	</p>
+	<p>
+		<label>
+			<input type="radio" name="status">
+			No experience
+		</label>
+	</p>
+	<hr>
+	<p>
+		<label>Expected salary</label>
+			<p>
+				<textarea></textarea>
+			</p>
+		</p>
+		<hr>
+	<p>
+		<label>Relocated</label>
+		<p>
+			<label>
+				<input type="radio" name="status">
+			</label>
+			yes
+		</p>
+		<p>
+			<label>
+				<input type="radio" name="status">
+			</label>
+			no
+		</p>
+	</p>
+	<hr>
+	<p>
+		<label> What is your name?</label>
+	</p>
+	<p>
+		<input type="text" name="first_name">
+		<input type="text" name="last_name">	
+	</p>
+	<hr>
+	<p>
+		<label>Email</label>
+		<p>
+			<input type="email" name="email">
+		</p>
+	</p>
+	<hr>
+	<p>
+		<label>Phone number</label>
+		<p>
+			<label>
+				<input type="tel" name="phone">
+			</label>
+		</p>
+	</p>
+	<hr>
+	<p>
+		<label>Comment</label>
+		<p>
+			<label>
+				<textarea></textarea>
+			</label>
+		</p>
+	</p>
+	 <p>
+    <button>
+      Send
+    </button>
+  </p>
+	</form>
+</fieldset>
+
+<img src="captcha.php" />
+ 
+<form action="check.php" method="POST">
+ 
+<input type="text" name="captcha_code">
+<input type="submit" value="OK" name="req">
+</body>
+</html>
